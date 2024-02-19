@@ -381,6 +381,7 @@ header {
   align-items: center;
   display: flex;
   margin: 0 auto;
+  width: 100%;
   max-width: 62.5rem;
   position: relative;
 }
@@ -1273,6 +1274,9 @@ input[type=submit]:hover {
     --gallery-width-24: 16.75rem;
     --gallery-height-24: 8.625rem;
   }
+  .gallery-container {
+    height: 15rem;
+  }
 }
 @media screen and (max-width: 768px) {
   :root {
@@ -1369,6 +1373,24 @@ input[type=submit]:hover {
     color: #ececec;
     font-family: "Pirata One", system-ui;
   }
+  .gallery-container {
+    height: 15rem;
+  }
+  .gallery-item-1 {
+    left: 30%;
+  }
+  .gallery-item-2 {
+    left: 40%;
+  }
+  .gallery-item-3 {
+    left: 50%;
+  }
+  .gallery-item-4 {
+    left: 60%;
+  }
+  .gallery-item-5 {
+    left: 70%;
+  }
 }
 @media screen and (max-width: 767px) {
   .cardBox {
@@ -1385,14 +1407,32 @@ input[type=submit]:hover {
     --img-width: 12rem;
     --span-font-size: 1.2rem;
   }
+  .gallery-container {
+    height: 15rem;
+  }
+  .gallery-item-1 {
+    left: 30%;
+  }
+  .gallery-item-2 {
+    left: 40%;
+  }
+  .gallery-item-3 {
+    left: 50%;
+  }
+  .gallery-item-4 {
+    left: 60%;
+  }
+  .gallery-item-5 {
+    left: 70%;
+  }
 }
 @media screen and (max-width: 280px) {
   :root {
     --h1-font-size: 2.5rem;
-    --h1-logo-font-size: 1rem;
+    --h1-logo-font-size: 1.3rem;
     --h2-font-size: 1.6rem;
     --h3-font-size: 1rem;
-    --span-font-size: .9rem;
+    --span-font-size: .95rem;
     --input-size: 10.8rem;
     --p-size: 1rem;
     --img-width: 8rem;
@@ -1407,10 +1447,13 @@ input[type=submit]:hover {
     --gallery-height-3: 11.75rem;
     --gallery-width-24: 16.75rem;
     --gallery-height-24: 8.625rem;
-    --dark-icon-width: 1.2rem;
-    --dark-icon-height: 1.2rem;
+    --dark-icon-width: 1.4rem;
+    --dark-icon-height: 1.4rem;
     --card-width: 230px;
     --card-height: 330px;
+  }
+  .header-logo {
+    gap: 0.5rem;
   }
   .contenido-video {
     gap: 0.1rem;
@@ -1444,6 +1487,21 @@ input[type=submit]:hover {
   }
   .gallery-controls button {
     margin: 0px 0px 0px 0px;
+  }
+  .gallery-item-1 {
+    left: 50%;
+  }
+  .gallery-item-2 {
+    left: 50%;
+  }
+  .gallery-item-3 {
+    left: 50%;
+  }
+  .gallery-item-4 {
+    left: 50%;
+  }
+  .gallery-item-5 {
+    left: 50%;
   }
   .back img {
     width: 5rem;
