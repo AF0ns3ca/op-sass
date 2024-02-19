@@ -1,6 +1,6 @@
 /**
- * @author Álvaro Fonseca Hernández
- * @GitHub https://github.com/AF0ns3ca/one-piece-form.git
+ * @Autor Alvaro Fonseca Hernandez
+ * @GitHub https://github.com/AF0ns3ca/op-sass.git
  */
 
 const nav = document.querySelector('#nav');

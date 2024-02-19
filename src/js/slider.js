@@ -1,3 +1,8 @@
+/**
+ * @Autor Alvaro Fonseca Hernandez
+ * @GitHub https://github.com/AF0ns3ca/op-sass.git
+ */
+
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['previous', 'next'];
@@ -10,40 +15,6 @@ class Carousel{
         this.carouselControls = controls;
         this.carouselArray = [...items];
     }
-
-    // updateGallery() {
-    //     this.carouselArray.forEach(el => {
-    //         el.classList.remove('gallery-item-1');
-    //         el.classList.remove('gallery-item-2');
-    //         el.classList.remove('gallery-item-3');
-    //         el.classList.remove('gallery-item-4');
-    //         el.classList.remove('gallery-item-5');
-    //     });
-    
-    //     this.carouselArray.slice(0, 5).forEach((el, i) => {
-    //         el.classList.add(`gallery-item-${i + 1}`);
-    
-    //         //Agregar evento de clic a la imagen con la clase gallery-item-3
-    //         if (el.classList.contains('gallery-item-3')) {
-    //             el.addEventListener('click', () => {
-    //                 const modalOverlay = document.createElement('div');
-    //                 modalOverlay.classList.add('modal-overlay');
-    
-    //                 const modalImage = document.createElement('img');
-    //                 modalImage.src = el.src;
-    //                 modalImage.classList.add('modal-image');
-    
-    //                 modalOverlay.appendChild(modalImage);
-    //                 document.body.appendChild(modalOverlay);
-    
-    //                 modalOverlay.addEventListener('click', () => {
-    //                     modalOverlay.remove();
-    //                 });
-    //             });
-    //         }
-           
-    //     });
-    // }
 
     updateGallery() {
         // Quita todos los eventos de clic de las imágenes
@@ -108,25 +79,6 @@ class Carousel{
             });
         });
     }
-
-    // setupModal() {
-    //     const galleryItem3 = document.querySelector('.gallery-item-3');
-    //     galleryItem3.addEventListener('click', () => {
-    //         const modalOverlay = document.createElement('div');
-    //         modalOverlay.classList.add('modal-overlay');
-
-    //         const modalImage = document.createElement('img');
-    //         modalImage.src = galleryItem3.src;
-    //         modalImage.classList.add('modal-image');
-
-    //         modalOverlay.appendChild(modalImage);
-    //         document.body.appendChild(modalOverlay);
-
-    //         modalOverlay.addEventListener('click', () => {
-    //             modalOverlay.remove();
-    //         });
-    //     });
-    // }
     
 
 }
@@ -136,4 +88,3 @@ const carousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 carousel.updateGallery();
 carousel.setControls();
 carousel.useControls();
-// carousel.setupModal();

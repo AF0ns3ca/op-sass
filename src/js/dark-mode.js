@@ -1,3 +1,8 @@
+/**
+ * @Autor Alvaro Fonseca Hernandez
+ * @GitHub https://github.com/AF0ns3ca/op-sass.git
+ */
+
 document.getElementById("dark-mode").addEventListener("click", function () {
   const btn = document.getElementById("dark-btn");
   //aplicar la clase darkmode a todo el documento
