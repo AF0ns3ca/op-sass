@@ -1,0 +1,109 @@
+footer
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  font-size: 1.2rem
+
+  li
+    list-style: none
+
+.footer-container
+  width: 100%
+  margin: 20px 0 0 0
+
+  /*Color pizarra
+  background-color: #222
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: #ffffff
+  font-family: "Pirata One", system-ui
+
+.footer-body
+  width: 100%
+  padding-top: 4rem
+  padding-bottom: 1rem
+  padding-left: 2rem
+  padding-right: 2rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 1rem
+
+.footer-sections
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  padding: 0 2rem 0.5rem 2rem
+  gap: 2rem
+
+footer a
+  text-decoration: none
+  color: darkgrey
+  font-family: Arial, Helvetica, sans-serif
+
+.footer-sections
+  h3
+    font-size: var(--h3-font-size)
+    color: #ffffff
+    font-family: Arial, Helvetica, sans-serif
+
+  p
+    color: darkgrey
+    font-family: Arial, Helvetica, sans-serif
+
+.footer-author
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  font-family: Arial, Helvetica, sans-serif
+
+  img
+    width: 25px
+    height: 25px
+
+.social
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  gap: 1.75rem
+  margin: 0.5rem
+
+  img
+    width: 40px
+    height: 40px
+    padding: 0.3rem
+    background-color: #ffffff
+    border-radius: 30%
+
+    &:hover
+      transform: scale(1.1)
+
+.author
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  p
+    font-size: var(--author-p-size)
+    color: #ffffff
+    font-family: Arial, Helvetica, sans-serif
+
+@media screen and (max-width: 280px)
+  .footer-sections
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    padding: 0
+
+  .footer-servicios
+    h3
+      font-size: 1rem
+
+    p
+      font-size: 0.75rem

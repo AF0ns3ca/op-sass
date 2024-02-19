@@ -1,0 +1,121 @@
+@import "../base/variables"
+
+
+.container-form
+  width: 100%
+
+label
+  // font-size: $label-font-size
+  font-size: var(--label-font-size)
+  color: #000000
+  margin-top: 1rem
+  font-family: "Pirata One", system-ui
+
+form
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-top: 1rem
+  margin-bottom: 1rem
+
+legend
+  font-size: 2rem
+  color: #000000
+  margin-bottom: 1rem
+  font-family: "Pirata One", system-ui
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  text-align: center
+
+  img
+    width: 70px
+    height: 70px
+    margin-left: 10px
+    margin-right: 10px
+
+.wrapper
+  width: 80%
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  gap: 1rem
+  border-radius: 10px
+
+fieldset
+  border-radius: 0.5rem
+  border: none
+
+.formulario
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-top: 2rem
+  gap: 1rem
+
+input
+  width: var(--input-size)
+  height: 3.5rem
+  border-radius: 0.5rem
+  border: 0.5px solid #000000
+  padding-left: 1rem
+  font-size: 1rem
+  outline: none
+
+textarea
+  width: var(--input-size)
+  border-radius: 0.5rem
+  border: 0.5px solid #000000
+  padding-left: 1rem
+  padding-top: 1rem
+  font-size: 1rem
+  outline: none
+
+/*Aumentar el font-size del placeholder
+
+input::placeholder
+  /* font-size: 1.3rem;
+  font-size: var(--placeholder-font-size)
+  font-family: Pirata One
+
+textarea::placeholder
+  font-size: var(--placeholder-font-size)
+  font-family: Pirata One
+
+input[type="submit"]
+  width: 70%
+  min-width: var(--input-min-width)
+  background-color: rgb(13, 84, 106)
+  color: #ffffff
+  font-size: 1.5rem
+  font-weight: bold
+  cursor: pointer
+  margin-right: 0
+  margin-left: 0
+  margin-bottom: 0.5rem
+  text-align: center
+
+  &:hover
+    background-color: rgb(25, 163, 205, 0.8)
+
+.volver-btn
+  width: 70%
+  min-width: var(--input-min-width)
+  background-color: rgb(106, 13, 13)
+  color: #ffffff
+  font-size: 1.5rem
+  font-weight: bold
+  cursor: pointer
+  margin-right: 0
+  margin-left: 0
+  margin-bottom: 0.5rem
+  text-align: center
+
+  &:hover
+    background-color: rgb(205, 25, 25, 0.8)

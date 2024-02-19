@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="stylesheet" href="./build/css/main.css" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <title>One Piece</title>
+   </head>
+   <body>
+      <div class="container">
+         <header class="main">
+            <div class="header-logo">
+               <img class="logo" src="/./build/assets/imgs/svg/luffyV.svg" alt="logo" />
+               <h1>One Piece</h1>
+               <span id="dark-mode" class="dark-icon"><img id="dark-btn" class="dark-img" src="./build/assets/imgs/svg/dark-mode.svg" alt=""></span>
+            </div>
+            <button id="abrir-menu" class="abrir-menu">&#9776;</button>
+            <nav id="nav" class="nav">
+               <button id="cerrar-menu" class="cerrar-menu">✕</button>
+               <ul class="nav-list">
+                  <li><a href="./templates/personajes.html">Personajes</a></li>
+                  <li>
+                     <a
+                        href="https://inmanga.com/ver/manga/One-Piece/dfc7ecb5-e9b3-4aa5-a61b-a498993cd935"
+                        target="_blank"
+                        >Manga</a
+                     >
+                  </li>
+                  <li>
+                     <a href="https://www3.animeflv.net/anime/one-piece-tv" target="_blank"
+                        >Anime</a
+                     >
+                  </li>
+                  <li><a href="./templates/formulario.html">Contacto</a></li>
+               </ul>
+            </nav>
+         </header>
+         <div class="video-hero">
+            <div class="overlay">
+               <div class="container contenido-video">
+                <img src="./build/assets/imgs/svg/bannerV.svg" alt="" />
+                <span
+                   >"You want my treasure, you can have it. I left everything I gathered together in
+                   one place. Now, you just have to find it." - Gold Roger</span
+                >
+               </div>
+            </div>
+            <video autoplay muted loop>
+               <source src="./build/assets/vids/luffy-video.mp4" type="video/mp4" />
+            </video>
+         </div>
+         <div class="content-container">
+            <div class="content">
+               <h2>¡Comienza la Gran Era de los Piratas!</h2>
+               <p>
+                  Riqueza, fama, poder. Gold Roger, el Rey de los Piratas, logró todo lo que este
+                  mundo tiene para ofrecer. Y así, muchos hombres se dirigen a Grand Line para
+                  encontrar el gran tesoro que dejó atrás, el One Piece. ¡El mundo ha entrado
+                  verdaderamente en una Gran Era Pirata! ¡Con el sombrero de paja que le dio el gran
+                  pirata Shanks, Monkey D. Luffy se dirige al mar en un viaje para convertirse en el
+                  Rey de los Piratas!
+               </p>
+            </div>
+            <div class="video-container">
+               <video width="680" height="350" controls poster="./build/assets/imgs/poster/onePoster.jpg">
+                  <source src="/./build/assets/vids/opening.mp4" type="video/mp4" />
+                  Tu navegador no soporta el elemento de video.
+               </video>
+            </div>
+         </div>
+         <hr class="line" />
+         <div class="gallery-body">
+            <h2 class="slider-title">Galería de Imágenes</h2>
+            <div class="gallery">
+               <div class="gallery-container">
+                  <img
+                     src="./build/assets/imgs/slider/slider-1.jpg"
+                     alt=""
+                     class="gallery-item gallery-item-1"
+                     data-index="1" />
+                  <img
+                     src="./build/assets/imgs/slider/slider-2.jpg"
+                     alt=""
+                     class="gallery-item gallery-item-2"
+                     data-index="2" />
+                  <img
+                     src="./build/assets/imgs/slider/slider-3.jpg"
+                     alt=""
+                     class="gallery-item gallery-item-3"
+                     data-index="3" />
+                  <img
+                     src="./build/assets/imgs/slider/slider-4.jpg"
+                     alt=""
+                     class="gallery-item gallery-item-4"
+                     data-index="4" />
+                  <img
+                     src="./build/assets/imgs/slider/slider-5.jpg"
+                     alt=""
+                     class="gallery-item gallery-item-5"
+                     data-index="5" />
+               </div>
+               <div class="gallery-controls"></div>
+            </div>
+         </div>
+         <footer>
+            <div class="footer-container">
+               <div class="footer-body">
+                  <div class="footer-sections">
+                     <div class="footer-servicios">
+                        <h3>Servicios</h3>
+                        <ul>
+                           <li><a href="./templates/personajes.html">Personajes</a></li>
+                           <li>
+                              <a
+                                 href="https://inmanga.com/ver/manga/One-Piece/dfc7ecb5-e9b3-4aa5-a61b-a498993cd935"
+                                 >Manga</a
+                              >
+                           </li>
+                           <li><a href="https://www3.animeflv.net/anime/one-piece-tv">Anime</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer-about">
+                        <h3>Sobre Nosotros</h3>
+                        <ul>
+                           <li><a href="./templates/formulario.html">Contacto</a></li>
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">Terminos y Condiciones</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer-company">
+                        <h3>Nuestra Compañia</h3>
+                        <p>
+                           Lo que comenzó como un pequeño proyecto web y un grupo de amigos, se
+                           convirtió en una de las mejores páginas de anime y manga en el mundo.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="footer-author">
+                     <div class="social">
+                        <a
+                           href="https://www.facebook.com/onepieceofficial/?locale=es_ES"
+                           target="_blank"
+                           ><img class="f" src="././build/assets/imgs/social/facebook.png" alt="facebook"
+                        /></a>
+                        <a href="https://www.instagram.com/onepiece_staff/?hl=es" target="_blank"
+                           ><img class="i" src="././build/assets/imgs/social/instagram.png" alt="instagram"
+                        /></a>
+                        <a href="https://twitter.com/OnePieceAnime" target="_blank"
+                           ><img class="x" src="././build/assets/imgs/social/x.png" alt="X"
+                        /></a>
+                        <a href="https://www.youtube.com/@onepieceofficial/featured" target="_blank"
+                           ><img class="y" src="././build/assets/imgs/social/youtube.png" alt="youtube"
+                        /></a>
+                     </div>
+                     <div class="author">
+                        <p>
+                           One Piece &copy; <img src="././build/assets/imgs/svg/luffyV.svg" alt="" /> 1997
+                           by Eiichiro Oda
+                        </p>
+                        <p>Álvaro Fonseca Hernández</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script src="./src/js/dark-mode.js"></script>
+      <script src="./src/js/hamburguer.js"></script>
+      <script src="./src/js/slider.js"></script>
+   </body>
+</html>

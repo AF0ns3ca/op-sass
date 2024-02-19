@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/css/normalize.css">
+    <link rel="stylesheet" href="../build/css/main.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="container-form">
+        <header>
+          <div class="header-logo">
+            <a href="../index.html"><img class="logo" src="/build/assets/imgs/svg/luffyV.svg" alt="logo"></a>
+            <h1>Contacto</h1>
+            <span id="dark-mode" class="dark-icon"><img id="dark-btn" class="dark-img" src="../build/assets/imgs/svg/dark-mode.svg" alt=""></span>
+        </div>
+            <button id="abrir-menu" class="abrir-menu">&#9776;</button>
+            <nav id="nav" class="nav">
+              <button id="cerrar-menu" class="cerrar-menu">✕</button>
+              <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="https://inmanga.com/ver/manga/One-Piece/dfc7ecb5-e9b3-4aa5-a61b-a498993cd935">Manga</a></li>
+                <li><a href="https://www3.animeflv.net/anime/one-piece-tv">Anime</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="container-display">
+            <form class="form" id="form" action="../index.html" method="get">
+                <div class="wrapper">
+                    <fieldset class="formulario">
+                        <legend><a href="../index.html"><img src="../build/assets/imgs/svg/luffyV.svg" alt=""></a>¿Quieres convertirte en Shichibukai?<a href="../index.html"><img src="../build/assets/imgs/svg/luffyV.svg" alt=""></a></legend>
+                        <label for="nombre">Di tu nombre, Nakama</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre..."/>
+                        <label for="apellidos">El Gobierno Mundial quiere saber tus apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos..."/>
+                        <label for="telefono">Ten a mano tu Den Den Mushi</label>
+                        <input type="text" name="telefono" id="telefono" placeholder="Introduce tu telefono..."/>
+                        <label for="email">El Dr. Vegapunk quiere enviarte un correo electronico</label>
+                        <input type="text" name="email" id="email" placeholder="Introduce correo electronico..."/>
+                        <label for="mensaje">¿Cual es tu sueño, pirata?</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Yo voy a ser el Rey de los Piratas..."></textarea>
+                        <input type="submit" value="Enviar" id="enviar"/>
+                        <input type="button" value="Volver a Inicio" class="volver-btn">
+                    </fieldset>
+                </div>
+            </form>
+          </div>
+          <footer>
+            <div class="footer-container">
+                <div class="footer-body">
+                  <div class="footer-sections">
+                    <div class="footer-servicios">
+                      <h3>Servicios</h3>
+                      <ul>
+                        <li><a href="./templates/personajes.html">Personajes</a></li>
+                        <li><a href="https://inmanga.com/ver/manga/One-Piece/dfc7ecb5-e9b3-4aa5-a61b-a498993cd935">Manga</a></li>
+                        <li><a href="https://www3.animeflv.net/anime/one-piece-tv">Anime</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-about">
+                      <h3>Sobre Nosotros</h3>
+                      <ul>
+                        <li><a href="formulario.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-company">
+                      <h3>Nuestra Compañia</h3>
+                      <p>
+                        Lo que comenzó como un pequeño proyecto web y un grupo de amigos, se convirtió en una de las mejores páginas de anime y manga en el mundo.
+                    </div>
+                  </div>
+                  <div class="footer-author">
+                    <div class="social">
+                      <a href="https://www.facebook.com/onepieceofficial/?locale=es_ES" target="_blank"><img src="../build/assets/imgs/social/facebook.png" alt="facebook"></a>
+                      <a href="https://www.instagram.com/onepiece_staff/?hl=es" target="_blank"><img src="../build/assets/imgs/social/instagram.png" alt="instagram"></a>
+                      <a href="https://twitter.com/OnePieceAnime" target="_blank"><img src="../build/assets/imgs/social/x.png" alt="X"></a>
+                      <a href="https://www.youtube.com/@onepieceofficial/featured" target="_blank"><img src="../build/assets/imgs/social/youtube.png" alt="youtube"></a>
+                    </div>
+                    <div class="author">
+                      <p>One Piece &copy; <img src="../build/assets/imgs/svg/luffyV.svg" alt=""> 1997 by Eiichiro Oda</p>
+                      <p>Álvaro Fonseca Hernández</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="../src/js/formulario.js"></script>
+    <script src="../src/js/hamburguer.js"></script>
+    <script src="../src/js/dark-mode.js"></script>
+</body>
+</html>

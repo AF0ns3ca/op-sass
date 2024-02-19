@@ -1,0 +1,312 @@
+.container-personajes
+  width: 100%
+  height: 100%
+
+hr
+  width: 100%
+  height: 1px
+  background-color: #ffffff
+  margin-top: 1rem
+  margin-bottom: 1rem
+
+.boxesContainer
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  gap: 2rem 12rem
+  padding-top: 9rem
+  padding-left: 1rem
+  padding-right: 1rem
+  padding-bottom: 1rem
+
+.cardBox
+  float: left
+  font-size: 1.2em
+  margin: 1% 0 0 1%
+  perspective: 800px
+  transition: all 0.3s ease 0s
+  width: var(--card-width)
+
+  &:hover .card
+    transform: rotateY(180deg)
+
+.card
+  background: #222
+  cursor: default
+  height: 700px
+  transform-style: preserve-3d
+  transition: transform 0.4s ease 0s
+  width: var(--card-width)
+  height: var(--card-height)
+  -webkit-animation: giro 1s 1
+  animation: giro 1s 1
+
+  .front, .back
+    backface-visibility: hidden
+    box-sizing: border-box
+    color: white
+    display: block
+    font-size: 1.2em
+    padding: 0.8em
+    position: absolute
+    text-align: center
+
+  .front
+    width: var(--card-width)
+    height: var(--card-height)
+
+  .back
+    width: var(--card-width)
+    height: var(--card-height)
+    transform: rotateY(180deg)
+    font-family: "Pirata One", system-ui
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.back
+  h3
+    font-size: 2rem
+    color: #ffffff
+    margin-top: 1rem
+    margin-bottom: 0.5rem
+    font-family: "Rye", serif
+
+  img
+    width: 8rem
+    height: 8rem
+
+  p
+    font-size: 1.5rem
+    color: #ffffff
+    margin-top: 1.5rem
+    font-family: "Pirata One", system-ui
+
+.personaje-logo
+  width: 7.5rem
+  height: 7rem
+
+.info-btn
+  a
+    text-decoration: none
+    color: #ffffff
+    font-family: "Pirata One", system-ui
+
+  width: 70%
+  padding: 0.75rem
+  border-radius: 10px
+  font-size: 1.5rem
+  font-weight: bold
+  cursor: pointer
+  margin-bottom: 0.5rem
+  margin-top: 0
+
+.luffy
+  .front
+    background: url(../assets/imgs/luffyWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #a90000
+
+  .info-btn
+    background-color: #0549a5
+    color: #dfd500
+
+    &:hover
+      background-color: #0d3773
+
+.zoro
+  .front
+    background: url(../assets/imgs/zoroWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #3c4f37
+
+  .info-btn
+    background-color: #000000
+    color: #875e5e
+
+    &:hover
+      background-color: #2b2b2b
+
+.nami
+  .front
+    background: url(../assets/imgs/namiWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #dd8112
+
+  .info-btn
+    background-color: #7151a5
+    color: #2e89b4
+
+    &:hover
+      background-color: #4f3a7b
+
+.sanji
+  .front
+    background: url(../assets/imgs/sanjiWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #2b68a0
+
+  .info-btn
+    background-color: #af8911
+    color: #921a1a
+
+    &:hover
+      background-color: #7a5f0e
+
+.brook
+  .front
+    background: url(../assets/imgs/brookWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #222
+
+  .info-btn
+    background-color: #b97fdd
+    color: #fed54b
+
+    &:hover
+      background-color: #a46cc9
+
+.usopp
+  .front
+    background: url(../assets/imgs/usoppWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #b89929
+
+  .info-btn
+    background-color: #677900
+    color: #d6e2df
+
+    &:hover
+      background-color: #4f5f00
+
+.chopper
+  .front
+    background: url(../assets/imgs/chopperWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #e17b7b
+
+  .info-btn
+    background-color: #62baa2
+    color: #ffebdb
+
+    &:hover
+      background-color: #4f8e7a
+
+.robin
+  .front
+    background: url(../assets/imgs/robinWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #5d006f
+
+  .info-btn
+    background-color: #b74026
+    color: #dcc198
+
+    &:hover
+      background-color: #8f2e1c
+
+.franky
+  .front
+    background: url(../assets/imgs/frankyWanted.jpg)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  .back
+    background-color: #66b4c4
+
+  .info-btn
+    background-color: #d34a56
+    color: #ffffff
+
+    &:hover
+      background-color: #a63a45
+
+.cardBox
+  &:nth-child(2) .card
+    -webkit-animation: giro 1.5s 1
+    animation: giro 1.5s 1
+
+  &:nth-child(3) .card
+    -webkit-animation: giro 2s 1
+    animation: giro 2s 1
+
+  &:nth-child(4) .card
+    -webkit-animation: giro 2.5s 1
+    animation: giro 2.5s 1
+
+  &:nth-child(5) .card
+    -webkit-animation: giro 3s 1
+    animation: giro 3s 1
+
+  &:nth-child(6) .card
+    -webkit-animation: giro 3.5s 1
+    animation: giro 3.5s 1
+
+  &:nth-child(7) .card
+    -webkit-animation: giro 4s 1
+    animation: giro 4s 1
+
+  &:nth-child(8) .card
+    -webkit-animation: giro 4.5s 1
+    animation: giro 4.5s 1
+
+  &:nth-child(9) .card
+    -webkit-animation: giro 5s 1
+    animation: giro 5s 1
+
+@-webkit-keyframes giro
+  from
+    transform: rotateY(180deg)
+
+  to
+    transform: rotateY(0deg)
+
+@keyframes giro
+  from
+    transform: rotateY(180deg)
+
+  to
+    transform: rotateY(0deg)
+
+
+
+
+
+

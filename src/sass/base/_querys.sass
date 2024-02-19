@@ -1,0 +1,206 @@
+@media screen and (max-width: 1440px)
+  \:root
+    --h2-font-size: 3rem
+    --p-size: 2rem
+
+  .content
+    width: 100%
+
+@media screen and (max-width: 1350px)
+  .cardBox
+    margin-top: 3%
+
+    &:last-child
+      margin-bottom: 3%
+
+@media screen and (max-width: 950px)
+  \:root
+    --h2-font-size: 3.5rem
+    --p-size: 1.5rem
+    --gallery-item-width: 12.625rem
+    --gallery-item-height: 5.5rem
+    --gallery-width-3: 19.875rem
+    --gallery-height-3: 11.75rem
+    --gallery-width-24: 16.75rem
+    --gallery-height-24: 8.625rem
+
+@media screen and (max-width: 768px)
+  \:root
+    --h1-font-size: 5rem
+    --h2-font-size: 2.5rem
+    --h3-font-size: 1.25rem
+    --span-font-size: 1.5rem
+    --input-size: 18.75rem
+    --p-size: 1.25rem
+    --img-width: 20rem
+    --author-p-size: 1rem
+    --gallery-item-width: 12.625rem
+    --gallery-item-height: 5.5rem
+    --gallery-width-3: 19.875rem
+    --gallery-height-3: 11.75rem
+    --gallery-width-24: 16.75rem
+    --gallery-height-24: 8.625rem
+
+  .content, .video-container
+    width: 100%
+
+  .nav-list li a
+    text-decoration: none
+    color: #ffffff
+  
+  .abrir-menu
+        display: block
+        cursor: pointer
+        font-size: 2rem
+        border: none
+        color: #1c1c1c
+        z-index: 10
+  
+  .cerrar-menu
+        display: block
+        cursor: pointer
+        font-size: 2rem
+        color: #1c1c1c
+        background: none
+        border: none
+        z-index: 20
+
+  .abrir-menu
+        color: #1c1c1c
+        &:hover
+            transform: scale(1.2)
+  
+  .cerrar-menu
+        color: #ececec
+        &:hover
+            transform: scale(1.2)
+
+  .nav
+        opacity: 0
+        visibility: hidden
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: end
+        gap: 1rem
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.95)
+        padding: 2rem
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5)
+        z-index: 10000
+
+  @keyframes navLinkFade
+        from
+            opacity: 0
+            transform: translateX(50px)
+
+        to
+            opacity: 1
+            transform: translateX(0px)
+
+
+  .nav.visible
+        opacity: 1
+        visibility: visible
+        animation: navLinkFade 0.5s ease forwards
+
+  .nav-list
+        flex-direction: column
+        align-items: end
+
+  li a
+        text-decoration: none
+        color: #ececec
+        font-family: "Pirata One", system-ui
+
+@media screen and (max-width: 767px)
+  .cardBox
+    margin-top: 3%
+
+    &:last-child
+      margin-bottom: 3%
+
+@media screen and (max-width: 400px)
+  \:root
+    --h1-logo-font-size: 1.7rem
+    --h2-font-size: 2rem
+    --img-width: 12rem
+    --span-font-size: 1.2rem
+
+@media screen and (max-width: 280px)
+  \:root
+    --h1-font-size: 2.5rem
+    --h1-logo-font-size: 1rem
+    --h2-font-size: 1.6rem
+    --h3-font-size: 1rem
+    --span-font-size: .9rem
+    --input-size: 10.8rem
+    --p-size: 1rem
+    --img-width: 8rem
+    --video-min-width: 250px
+    --author-p-size: .7rem
+    --error-font-size: .6rem
+    --placeholder-font-size: 0.8rem
+    --label-font-size: .85rem
+    --gallery-item-width: 5rem
+    --gallery-item-height: 1rem
+    --gallery-width-3: 15rem
+    --gallery-height-3: 11.75rem
+    --gallery-width-24: 16.75rem
+    --gallery-height-24: 8.625rem
+    --dark-icon-width: 1.2rem
+    --dark-icon-height: 1.2rem
+    --card-width: 230px
+    --card-height: 330px
+
+  .contenido-video
+    gap: .1rem
+
+  fieldset
+    width: 100%
+    max-width: 250px
+
+  legend
+    padding: 1rem
+
+  label
+    font-size: 1rem
+
+  .form img
+    width: 50px
+    height: 50px
+
+  .content
+    width: 100%
+
+  .logo
+    width: 3rem
+    height: 3rem
+
+  .gallery-controls
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: .1rem
+
+  .gallery-controls button
+    margin: 0px 0px 0px 0px
+
+  .back
+    img
+      width: 5rem
+      height: 5rem
+
+    p
+      font-size: 1.1rem
+
+  .info-btn
+    font-size: 1.2rem
+
+  .dark-img img
+    width: var(--dark-icon-width)
+    height: var(--dark-icon-height)
