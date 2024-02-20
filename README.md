@@ -7,7 +7,7 @@
 - **Link:** https://onepiecemaniasass.netlify.app/
 
 ## New Features
-1. Estilos en .sass
+1. Estilos en sass
 2. Video como fondo
 3. Slider con ventana modal
 4. Modo oscuro en todos los templates con peristencia en localstorage
